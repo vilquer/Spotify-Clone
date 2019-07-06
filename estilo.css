@@ -7,6 +7,19 @@
 */
 
 /******************** Layout ********************/
+/* -- IBody -- */
+html, body, .capa {
+	height:  100%
+}
+body{
+	background: url('imagens/capa.png'),
+				url('imagens/ruido.png'),
+				/*linear-gradient(#ff4169,#7c26f8) original*/
+				linear-gradient(50deg,#0080ff,#00bfff);
+	background-attachment: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
 
 /* -- Barra de Navegação -- */
 .img-logo{
@@ -37,6 +50,49 @@ nav.navbar-transparente{
 .navbar-inverse .navbar-nav>li>a:hover{
 	color: #9bf0e1;
 }
+/* -- Imagem de Capa -- */
+.capa {
+	display: table;
+	width: 100%;
+}
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+/* -- botões -- */
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 0px 15px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	/*border: 2px solid white;*/
+}
+.btn-free{
+	background: #0080ff;	
+}
+.btn-free:hover{
+	background-color:  #0040ff;
+	color: white;
+}
+.btn-premium{
+	border: 2px solid white;
+}
+.btn-premium:hover{
+	background-color: white;
+	color: black;
+}
 
 
 /******************** Tipografia ********************/
+h1 {
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
