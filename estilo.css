@@ -45,11 +45,12 @@ nav.navbar-transparente{
 	background:	white;
 	margin: 16px 10px;
 }
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
 	color: white;
 }
-.navbar-inverse .navbar-nav>li>a:hover{
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
 	color: #9bf0e1;
+	background: none;
 }
 /* -- Imagem de Capa -- */
 .capa {
@@ -110,6 +111,15 @@ nav.navbar-transparente{
 	-webkit-transform: rotate(30deg);
 	padding-left: 80px;
 }
+/* -- rodapé -- */
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+.item-rede-social{
+	float: right;
+}
 
 
 /******************** Tipografia ********************/
@@ -135,4 +145,10 @@ h3 {
 
 #recursos h3 {
 	color: #0010ff;
+}
+
+#rodape h4{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
 }
